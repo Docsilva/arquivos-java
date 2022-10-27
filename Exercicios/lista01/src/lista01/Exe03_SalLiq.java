@@ -1,12 +1,13 @@
 package lista01;
 
 import java.text.DecimalFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Exe03_SalLiq {
 
 	public static void main(String[] args) {
-
+		Locale.setDefault(Locale.US);
 
 		double sal_bru, adc_not, hor_ext, des;
 
