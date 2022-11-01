@@ -2,7 +2,7 @@ package lista04;
 
 import java.util.Scanner;
 
-public class Exe04_Matriz {
+public class Exe03_Matriz {
 
 	public static Scanner leia = new Scanner (System.in);
 	public static void main(String[] args) {
