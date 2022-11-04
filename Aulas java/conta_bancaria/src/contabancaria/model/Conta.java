@@ -57,13 +57,29 @@ public class Conta {
 		return true;
 	}
 	
+	public void depositar (float valor) {
+		this.setSaldo(this.getSaldo() + valor);
+	}
+	
 	public void vizualizar() {
+		
+		String tipo = "";
+		
+		switch(this.tipo) {
+		
+		case 1:
+			tipo = "Conta Corrente";
+			break;
+		case 2:
+			tipo = "Conta Poupança";
+			break;
+		}
 		System.out.println("*************************************\n");
-		System.out.println("Dados da Conta");
+		System.out.println("             Dados da Conta"            );
 		System.out.println("\n*************************************");
 		System.out.println("\nNumero da conta: " + this.numero);
 		System.out.println("\nNumero da agência: " + this.agencia);
-		System.out.println("\nTipo da conta: " + this.tipo);
+		System.out.println("\nTipo da conta: " + tipo);
 		System.out.println("\nNome do titular: " + this.titular);
 		System.out.println("\nSaldo da conta: " + this.saldo);
 

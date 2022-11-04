@@ -3,6 +3,8 @@ package contabancaria;
 import java.util.Scanner;
 
 import contabancaria.model.Conta;
+import contabancaria.model.ContaCorrente;
+import contabancaria.model.ContaPoupanca;
 import contabancaria.util.Cores;
 
 public class Menu {
@@ -13,13 +15,18 @@ public class Menu {
 
 		int op;
 
-		Conta c1 = new Conta(1, 123, 1, "João da Silva", 100000.0f);
+		ContaCorrente c1 = new ContaCorrente(1, 123, 2, "João da Silva", 10000.0f, 1000.0f);
+		ContaPoupanca cp1 = new ContaPoupanca (2, 123, 2, "Maria da Silva", 10000.0f, 15);
+
 		
 		c1.vizualizar();
 		
-		c1.sacar(1500.0f);
+		cp1.vizualizar();
 		
-		c1.vizualizar();
+		/*7		c1.sacar(1500.0f);
+		
+		c1.vizualizar(); 
+		
 		
 		while  (true){
 		
@@ -78,17 +85,8 @@ public class Menu {
 				
 				break;
 			}
-		}
-		
-		
-
-		
-
-
-
-
-
-		
+		} */
+				
 	}
 
 }
