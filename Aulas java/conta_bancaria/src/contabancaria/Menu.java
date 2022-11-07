@@ -1,5 +1,6 @@
 package contabancaria;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import contabancaria.model.Conta;
@@ -12,6 +13,7 @@ public class Menu {
 	
 	public static Scanner leia = new Scanner (System.in);
 	public static void main(String[] args) {
+		
 
 		int op;
 
@@ -26,6 +28,9 @@ public class Menu {
 		/*7		c1.sacar(1500.0f);
 		
 		c1.vizualizar(); 
+		
+		*/
+		
 		
 		
 		while  (true){
@@ -60,33 +65,56 @@ public class Menu {
 			case 1: 
 				System.out.println("\nCriar Conta");
 				
+				keyPress();
 				break;
 				
 			case 2: 
 				System.out.println("\nVer Saldo");
 				
+				keyPress();
 				break;
 			case 3: 
 				System.out.println("\nDados da Conta");
 				
+				keyPress();
 				break;
 				
 			case 4: 
 				System.out.println("\nSacae");
 				
+				keyPress();
 				break;
 			case 5: 
 				System.out.println("\nDepositar");
 				
+				keyPress();
 				break;
 				
 			case 6: 
 				System.out.println("\nTransferir");
 				
+				keyPress();
 				break;
 			}
-		} */
+			
+		}
 				
 	}
 
+	public static void keyPress() {
+
+		try {
+
+			System.out.println(Cores.TEXT_RESET + "\n\nPressione Enter para Continuar...");
+			System.in.read();
+
+		} catch (IOException e) {
+
+			System.out.println("Você pressionou uma tecla diferente de enter!");
+
+		}
+	}
+
+	
+	
 }

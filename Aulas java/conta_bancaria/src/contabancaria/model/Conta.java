@@ -1,6 +1,6 @@
 package contabancaria.model;
 
-public class Conta {
+public abstract class Conta {
 	
 	private int numero;
 	private int agencia;
@@ -77,6 +77,7 @@ public class Conta {
 		System.out.println("*************************************\n");
 		System.out.println("             Dados da Conta"            );
 		System.out.println("\n*************************************");
+		System.out.println("\n                                     ");
 		System.out.println("\nNumero da conta: " + this.numero);
 		System.out.println("\nNumero da agência: " + this.agencia);
 		System.out.println("\nTipo da conta: " + tipo);
