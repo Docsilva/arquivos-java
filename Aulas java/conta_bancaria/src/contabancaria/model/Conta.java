@@ -61,7 +61,7 @@ public abstract class Conta {
 		this.setSaldo(this.getSaldo() + valor);
 	}
 	
-	public void vizualizar() {
+	public void visualizar() {
 		
 		String tipo = "";
 		

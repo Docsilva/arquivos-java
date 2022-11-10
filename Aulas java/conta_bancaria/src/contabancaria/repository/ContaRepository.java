@@ -2,7 +2,7 @@ package contabancaria.repository;
 
 import contabancaria.model.Conta;
 
-public interface ContaRepositoty {
+public interface ContaRepository {
 	
 	public void procurarPorNumero (int numero);
 	public void listarTodas();
